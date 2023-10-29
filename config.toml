@@ -1,6 +1,7 @@
 # The URL the site will be built for
-base_url = "https://itsmariush.github.io/itsmariush/"
+base_url = "https://itsmariush.github.io/itsmariush"
 theme="after-dark"
+title = "itsmarius"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -18,3 +19,11 @@ taxonomies = [
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = false
+
+[extra]
+after_dark_menu = [
+    {url = "$BASE_URL", name = "Home"},
+    {url = "$BASE_URL/categories", name = "Categories"},
+    {url = "$BASE_URL/tags", name = "Tags"},
+]
+after_dark_title = "it's marius"
